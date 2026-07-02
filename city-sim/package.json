@@ -1,0 +1,21 @@
+{
+  "name": "city-sim",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "3D city visualization of the Agent Command Center, built with Three.js and Vite",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.170.0",
+    "typescript": "^5.4.5",
+    "vite": "^5.4.11"
+  }
+}

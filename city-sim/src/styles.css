@@ -1,0 +1,112 @@
+:root {
+  color-scheme: dark;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: #0b0e14;
+  color: #e7ecf3;
+}
+
+.shell {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.viewport {
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.viewport canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.dashboard {
+  flex: 0 0 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: #10141d;
+  border-left: 1px solid #232a38;
+  overflow-y: auto;
+}
+
+#dashboard {
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+#dashboard h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+  color: #ffd166;
+}
+
+#dashboard .stat-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.15rem 0;
+  border-bottom: 1px solid #1c2331;
+}
+
+#dashboard .citizen-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.2rem 0;
+}
+
+#dashboard .citizen-status {
+  opacity: 0.7;
+  font-size: 0.75rem;
+}
+
+.time-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.time-controls button,
+#cityButton,
+.button-list button {
+  flex: 1;
+  padding: 0.5rem;
+  background: #1c2331;
+  color: #e7ecf3;
+  border: 1px solid #2c3546;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.time-controls button.active {
+  background: #ffd166;
+  color: #1c1400;
+  border-color: #ffd166;
+}
+
+#cityButton:hover,
+.time-controls button:hover,
+.button-list button:hover {
+  border-color: #ffd166;
+}
+
+.button-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
